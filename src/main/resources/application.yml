@@ -20,3 +20,7 @@ spring:
         dialect: org.hibernate.dialect.H2Dialect
         format_sql: true
         show_sql: true
+jwt:
+  secret: C3CEA4B5C84633354D6D22CAA1DC9  # JWT ?? ?
+  expiration: 3600000      # Access Token ?? ?? (??? ??, ?: 1??)
+  refresh-expiration: 2592000000 # Refresh Token ?? ?? (??? ??, ?: 30?)
