@@ -74,7 +74,7 @@ data class LoginDto(
     private val _loginId: String?,
 
     @field:NotBlank
-    @JsonProperty("loginId")
+    @JsonProperty("password")
     private val _password: String?,
 ){
     val loginId: String
