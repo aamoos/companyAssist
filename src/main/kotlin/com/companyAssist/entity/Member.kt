@@ -34,7 +34,6 @@ class Member(
     val gender: Gender,
 
     @Column(nullable = false, length = 5)
-    @Enumerated(EnumType.STRING)
     val email: String
 ) {
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "member")
